@@ -1,0 +1,55 @@
+pqsl https://www.tutorialspoint.com/postgresql/postgresql_overview.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+psql
+-----
+To open database shell
+psql -U postgres                            password 4mc08ec054
+
+To create database
+CREATE DATABASE bankdb;
+
+To check all data present
+\l
+To slesct database
+\c database_name
+
+To see content
+\d table_name
+
+To create table
+CREATE TABLE COMPANY(ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, AGE INT NOT NULL, ADDRESS CHAR(50), SALARY REAL);
+To see content of table
+\d
+
+Database migration
+------------------------
+To create database
+python manage.py db init
+
+To create migration script
+python manage.py db migrate
+
+To migrate database
+python manage.py db upgrade
+
