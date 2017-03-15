@@ -17,7 +17,10 @@ app.config.from_object('config.DevelopmentConfig')
 db = SQLAlchemy(app)
 
 from mybank.users.views import users_blueprint
+from mybank.home.views import home_blueprint
+
 app.register_blueprint(users_blueprint)
+app.register_blueprint(home_blueprint)
 
 from models import User
 

@@ -53,3 +53,5 @@ python manage.py db migrate
 To migrate database
 python manage.py db upgrade
 
+To update field
+UPDATE table_name SET col_val=value WHERE ID=something
